@@ -14,8 +14,6 @@ $this->title = 'FIX Club';
                 <button class="btn btn-success">Старт</button>
                 <?= Html::img('/images/female-dancer.png') ?>
                 <?= Html::img('/images/male-dancer.png') ?>
-                <?= Html::img('/images/male-dancer.png') ?>
-                <?= Html::img('/images/female-dancer.png') ?>
             </div>
             <div class="col-md-10 col-sm-10 col-xs-10 dancezone cells">
 
