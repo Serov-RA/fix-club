@@ -40,6 +40,10 @@ body {
     margin: 0 0 15px 0;
 }
 
+.body-content {
+    min-width: 600px;
+}
+
 .top-club, .bottom-club {
     min-width: 600px;
 }
