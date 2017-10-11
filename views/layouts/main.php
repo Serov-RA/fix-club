@@ -21,7 +21,7 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<div class="wrap">
+<div class="wrap club-layout">
     <div class="container">
         <?= $content ?>
     </div>
@@ -29,7 +29,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; FIX Club <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
