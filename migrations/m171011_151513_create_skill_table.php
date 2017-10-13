@@ -7,7 +7,7 @@ use yii\db\Migration;
  * Has foreign keys to the tables:
  *
  * - `visitor`
- * - `dance_movement`
+ * - `music_style`
  */
 class m171011_151513_create_skill_table extends Migration
 {
@@ -19,7 +19,7 @@ class m171011_151513_create_skill_table extends Migration
         $this->createTable('skill', [
             'id' => $this->primaryKey(),
             'visitor_id' => $this->integer()->defaultValue(NULL),
-            'movement_id' => $this->integer()->defaultValue(NULL),
+            'style_id' => $this->integer()->defaultValue(NULL),
         ]);
 
         // creates index for column `visitor_id`
@@ -39,19 +39,19 @@ class m171011_151513_create_skill_table extends Migration
             'CASCADE'
         );
 
-        // creates index for column `movement_id`
+        // creates index for column `style_id`
         $this->createIndex(
-            'idx-skill-movement_id',
+            'idx-skill-style_id',
             'skill',
-            'movement_id'
+            'style_id'
         );
 
-        // add foreign key for table `dance_movement`
+        // add foreign key for table `music_style`
         $this->addForeignKey(
-            'fk-skill-movement_id',
+            'fk-skill-style_id',
             'skill',
-            'movement_id',
-            'dance_movement',
+            'style_id',
+            'music_style',
             'id',
             'CASCADE'
         );
@@ -74,15 +74,15 @@ class m171011_151513_create_skill_table extends Migration
             'skill'
         );
 
-        // drops foreign key for table `dance_movement`
+        // drops foreign key for table `music_style`
         $this->dropForeignKey(
-            'fk-skill-movement_id',
+            'fk-skill-style_id',
             'skill'
         );
 
-        // drops index for column `movement_id`
+        // drops index for column `style_id`
         $this->dropIndex(
-            'idx-skill-movement_id',
+            'idx-skill-style_id',
             'skill'
         );
 

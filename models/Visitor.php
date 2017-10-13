@@ -6,6 +6,11 @@ use yii\db\ActiveRecord;
 
 class Visitor extends ActiveRecord
 {
+    public $allowed_sex = [
+        'male' => 'Мальчик',
+        'female' => 'Девочка',
+    ];
+
     /**
      * @access public
      *

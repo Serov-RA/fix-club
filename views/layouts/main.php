@@ -31,7 +31,7 @@ AppAsset::register($this);
     <div class="container">
         <p class="pull-left">&copy; FIX Club <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-right"></p>
     </div>
 </footer>
 

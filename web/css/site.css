@@ -12,8 +12,8 @@ body {
     padding: 0 0 60px;
 }
 
-.wrap > .container {
-    padding: 70px 15px 20px;
+.buttons, .player {
+    padding: 15px 0px;
 }
 
 .footer {
@@ -75,4 +75,25 @@ body {
 
 .bottom-club .right-wall {
     border-top: 1px solid #fff;
+}
+
+#modal_window {
+    color: #000;
+}
+
+.dancer {
+    position: absolute;
+    font-size: 10px;
+}
+
+.dancer:hover {
+    z-index: 10;
+}
+
+.dancer .action {
+    background: #000;
+}
+
+#playlistform-song_id label, #visitorform-skills label {
+    display: block;
 }

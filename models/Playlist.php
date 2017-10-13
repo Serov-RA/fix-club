@@ -27,4 +27,16 @@ class Playlist extends ActiveRecord
     {
         return $this->hasOne(Session::className(), ['id' => 'sid']);
     }
+
+    /**
+     * @access public
+     *
+     * Mark play current song
+     */
+    public function play()
+    {
+        self::updateAll(['is_play' => 0], ['sid' => Session::getCurrentSession()]);
+        $this->is_play = 1;
+        $this->save();
+    }
 }

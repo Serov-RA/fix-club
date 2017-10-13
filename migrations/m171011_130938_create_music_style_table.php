@@ -48,7 +48,7 @@ class m171011_130938_create_music_style_table extends Migration
         ];
 
         foreach ($styles AS $style => $pid) {
-            $this->insert('music_style', ['style_name' => $style]);
+            $this->insert('music_style', ['style_name' => $style, 'pid' => $pid]);
         }
     }
 

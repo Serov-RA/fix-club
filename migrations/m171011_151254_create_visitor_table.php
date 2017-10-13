@@ -20,7 +20,7 @@ class m171011_151254_create_visitor_table extends Migration
             'id' => $this->primaryKey(),
             'sid' => $this->integer()->defaultValue(NULL),
             'sex' => $this->string(6)->notNull()->defaultValue(''),
-            'action' => $this->integer()->defaultValue(0),
+            'action' => $this->integer()->defaultValue(NULL),
         ]);
 
         // creates index for column `sid`
