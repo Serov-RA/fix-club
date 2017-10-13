@@ -11,7 +11,8 @@ class PlaylistForm extends Playlist
      */
     public static function tableName()
     {
-        return get_parent_class()::tableName();
+        $st = get_parent_class();
+        return $st::tableName();
     }
 
     /**
